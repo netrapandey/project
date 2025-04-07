@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 1rem;
+}
+
+main {
+  padding: 1.5rem;
+  background-color: azure;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.view-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.view-1 p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-1 h1 {
+  font-weight: 300;
+  font-size: 3.8rem;
+  width: 70%;
+}
+.view-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.view-2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+.view-2 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .top p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-2 .top h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  width: 90%;
+}
+.view-2 .top button {
+  padding: 1rem;
+  border: 0.7rem;
+  border-radius: 0.5em;
+  background-color: black;
+  color: rgb(255, 248, 214);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.view-2 .line {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+}
+.view-2 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .bottom .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 .bottom .elem svg {
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-2 .bottom .elem h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.view-2 .bottom .elem p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+@media (min-width: 1020px) {
+  main {
+    padding: 3rem;
+  }
+  .view-1 {
+    width: 100%;
+  }
+  .view-1 h1 {
+    font-size: 6rem;
+  }
+  .view-2 {
+    flex-direction: row;
+  }
+  .view-2 .line {
+    height: initial;
+    width: 100%;
+  }
+  .view-2 .bottom .line {
+    height: initial;
+    width: 1px;
+    align-self: stretch;
+  }
+}/*# sourceMappingURL=style.css.map */
